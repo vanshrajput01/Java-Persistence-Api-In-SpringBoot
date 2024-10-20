@@ -1,0 +1,6 @@
+1.create spring starter project
+2. add these dependencies
+. spring data JPA
+. database
+. jdbc
+3. give data base related configuration in application.properties
