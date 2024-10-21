@@ -25,6 +25,18 @@ public class Project01Application {
 		 // Here how get single Record.
 		 String student = repo.getStudentById(2);
 		 System.out.println(student);
+
+		List<Student> sts = repo.getAllStudent();
+		 sts.forEach(e->{
+			 System.out.println(e.getName() + " " + e.getStudFee());
+		 });
+		 
+		 // get single record in data
+		 List<Student> getStudent = repo.getStudentByName("stud01");
+		 getStudent.forEach(e->{
+			 System.out.println(e.getName() + " " + e.getStudFee());
+		 });
+		 
 		 
 		 
 		
